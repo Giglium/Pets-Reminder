@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "it.unipd.math.cs.PetsReminder"
+    }
+  }
+}

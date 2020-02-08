@@ -1,0 +1,1 @@
+When you use one of `cordova` command, this folder's content will automagically generate.

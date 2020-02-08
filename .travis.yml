@@ -1,0 +1,37 @@
+language: node_js
+
+node_js:
+  - "10"
+
+os:
+  - linux
+
+dist: trusty
+
+cache:
+  timeout: 500
+  directories:
+    - node_modules
+
+git:
+  depth: false
+  submodules: false
+
+before_install:
+  - npm install -g cordova
+  - cordova platform add browser
+
+install:
+  - npm install
+
+script:
+  - cordova build browser
+
+branches:
+  only:
+    master
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
