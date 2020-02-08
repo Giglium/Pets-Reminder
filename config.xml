@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ -->
+<widget id="it.unipd.math.cs.PetsReminder" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="android-minSdkVersion" value="19"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <hook src="hooks/hookers.js" type="before_prepare"/>
+    <hook src="hooks/beforedep.js" type="before_deploy"/>
+    <name>Pets Reminder</name>
+    <description>
+        Pets Reminder is a project for &quot;Mobile Programming and Multimedia&quot; at University of Padua
+    </description>
+    <author email="francescoanotnio.migliorin@studenti.unipd.it" href="https://giglium.github.io/">
+        Migliorin Francesco Antonio
+    </author>
+    <content src="index.html"/>
+    <plugin name="cordova-plugin-whitelist" spec="1"/>
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="file:*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <allow-intent href="webpack:*"/>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+        <preference name="AndroidPersistentFileLocation" value="Internal"/>
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root"/>
+        <icon src="res/icon/android/ldpi.png" density="ldpi"/>
+        <icon src="res/icon/android/mdpi.png" density="mdpi"/>
+        <icon src="res/icon/android/hdpi.png" density="hdpi"/>
+        <icon src="res/icon/android/xhdpi.png" density="xhdpi"/>
+        <splash src="res/screen/android/hdpi.png" density="hdpi"/>
+        <splash src="res/screen/android/hdpi.png" density="port-hdpi"/>
+        <splash src="res/screen/android/ldpi.png" density="ldpi"/>
+        <splash src="res/screen/android/ldpi.png" density="port-ldpi"/>
+        <splash src="res/screen/android/mdpi.png" density="mdpi"/>
+        <splash src="res/screen/android/mdpi.png" density="port-mdpi"/>
+        <splash src="res/screen/android/xhdpi.png" density="xhdpi"/>
+        <splash src="res/screen/android/xhdpi.png" density="port-xhdpi"/>
+        <splash src="res/screen/android/xxhdpi.png" density="xxhdpi"/>
+        <splash src="res/screen/android/xxhdpi.png" density="port-xxhdpi"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*"/>
+        <allow-intent href="itms-apps:*"/>
+        <preference name="iosPersistentFileLocation" value="Library"/>
+        <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root"/>
+        <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+            <string>I need camera access to take pictures</string>
+        </edit-config>
+        <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+            <string>I need photo library access to get pictures from there</string>
+        </edit-config>
+        <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+            <string>I need photo library access to save pictures there</string>
+        </edit-config>
+        <icon src="res/icon/ios/icon-20.png" width="20" height="20"/>
+        <icon src="res/icon/ios/icon-20@2.png" width="40" height="40"/>
+        <icon src="res/icon/ios/icon-20@3.png" width="60" height="60"/>
+        <icon src="res/icon/ios/icon-29.png" width="29" height="29"/>
+        <icon src="res/icon/ios/icon-29@2.png" width="58" height="58"/>
+        <icon src="res/icon/ios/icon-29@3.png" width="87" height="87"/>
+        <icon src="res/icon/ios/icon-40.png" width="40" height="40"/>
+        <icon src="res/icon/ios/icon-40@2.png" width="80" height="80"/>
+        <icon src="res/icon/ios/icon-40@3.png" width="120" height="120"/>
+        <icon src="res/icon/ios/icon-60.png" width="60" height="60"/>
+        <icon src="res/icon/ios/icon-60@2.png" width="120" height="120"/>
+        <icon src="res/icon/ios/icon-60@3.png" width="180" height="180"/>
+        <icon src="res/icon/ios/icon-76.png" width="76" height="76"/>
+        <icon src="res/icon/ios/icon-76@2.png" width="152" height="152"/>
+        <icon src="res/icon/ios/icon-40.png" width="40" height="40"/>
+        <icon src="res/icon/ios/icon-83.5.png" width="83.5" height="83.5"/>
+        <icon src="res/icon/ios/icon-83.5@2.png" width="167" height="167"/>
+        <icon src="res/icon/ios/icon-1024.png" width="1024" height="1024"/>
+        <!--
+        Disable because with this cordova take always this one and not the others
+        <splash src="res/screen/ios/Default@2x~universal~anyany.png"/>
+        -->
+        <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
+        <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+        <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
+        <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+        <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
+        <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+        <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
+        <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
+        <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
+        <splash src="res/screen/ios/640x1136.png" width="640" height="1136"/>
+        <splash src="res/screen/ios/750x1334.png" width="750" height="1334"/>
+        <splash src="res/screen/ios/828x1792.png" width="828" height="1792"/>
+        <splash src="res/screen/ios/1125x2436.png" width="1125" height="2436"/>
+        <splash src="res/screen/ios/1242x2208.png" width="1242" height="2208"/>
+        <splash src="res/screen/ios/1242x2688.png" width="1242" height="2688"/>
+        <splash src="res/screen/ios/1536x2048.png" width="1536" height="2048"/>
+        <splash src="res/screen/ios/1668x2224.png" width="1668" height="2224"/>
+        <splash src="res/screen/ios/1668x2388.png" width="1668" height="2388"/>
+        <splash src="res/screen/ios/2048x2732.png" width="2048" height="2732"/>
+    </platform>
+    <platform name="browser">
+        <preference name="SplashScreen" value="res/screen/ios/2048x2732.pngg"/>
+        <preference name="AutoHideSplashScreen" value="true"/>
+        <preference name="SplashScreenDelay" value="3000"/>
+        <preference name="SplashScreenBackgroundColor" value="#333333"/>
+        <preference name="ShowSplashScreen" value="false"/>
+        <preference name="SplashScreenWidth" value="180"/>
+        <preference name="SplashScreenHeight" value="180"/>
+    </platform>
+<allow-navigation href="*"/></widget>

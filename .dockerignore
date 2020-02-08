@@ -1,0 +1,9 @@
+/node_modules
+.idea
+/platforms
+/plugins
+.gradle
+.editorconfig
+android.keystore
+package-lock.json
+/www/*

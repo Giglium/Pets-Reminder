@@ -1,0 +1,30 @@
+{
+  "ios": {
+    "release": {
+      "buildFlag": [
+        "-UseModernBuildSystem=0"
+      ]
+    },
+    "development": {
+      "buildFlag": [
+        "-UseModernBuildSystem=0"
+      ]
+    },
+    "debug": {
+      "buildFlag": [
+        "-UseModernBuildSystem=0"
+      ]
+    }
+  },
+  "android": {
+    "release": {
+      "keystore": "./android.keystore",
+      "storePassword": "000000",
+      "alias": "pet",
+      "password" : "000000",
+      "keystoreType": "jks"
+    }
+  }
+}
+
+

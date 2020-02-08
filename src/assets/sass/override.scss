@@ -1,0 +1,72 @@
+/* stylelint-disable color-function-notation */
+
+input:disabled {
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+.theme-dark {
+  input:disabled {
+    color: #fff !important;
+  }
+
+  .apexcharts-tooltip-title{
+    color: #000;
+  }
+
+  .apexcharts-tooltip-series-group{
+    color: #000;
+  }
+}
+
+.fab{
+  a{
+    margin: calc((69px - var(--f7-fab-size))/2);
+  }
+
+  &.c-pulse{
+    a{
+      margin: 0;
+    }
+  }
+}
+
+.page-content {
+  padding-top: calc(var(--f7-page-navbar-offset, 0px) + var(--f7-page-content-extra-padding-top, 0px));
+}
+
+.sortable-tap-hold{
+  user-select: none;
+}
+
+:root {
+  --f7-sortable-handler-color: rgba(0, 0, 0, 22%);
+  --f7-sortable-sorting-item-bg-color: rgba(255, 255, 255, 80%);
+}
+
+:root .theme-dark,
+:root.theme-dark {
+  --f7-sortable-sorting-item-bg-color: rgba(50, 50, 50, 80%);
+  --f7-sortable-handler-color: rgba(255, 255, 255, 55%);
+}
+
+.ios {
+  --f7-sortable-handler-width: 36px;
+  --f7-sortable-sorting-item-box-shadow: 0px 2px 8px rgba(0, 0, 0, 60%);
+}
+
+.md {
+  --f7-sortable-handler-width: 42px;
+  --f7-sortable-sorting-item-box-shadow: var(--f7-elevation-2);
+}
+
+.aurora {
+  --f7-sortable-handler-width: 32px;
+  --f7-sortable-sorting-item-box-shadow: var(--f7-elevation-2);
+}
+
+.card-footer{
+  .link{
+    padding: 10px;
+  }
+}

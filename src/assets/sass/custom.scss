@@ -1,0 +1,211 @@
+/* stylelint-disable color-function-notation */
+
+.c-img-avatar-box {
+  position: relative;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #333;
+  margin: auto;
+  background-color: white;
+
+  /* See https://gist.github.com/ayamflow/b602ab436ac9f05660d9c15190f4fd7b */
+
+  /* stylelint-disable-next-line */
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+  .c-avatar-image {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .c-avatar-content {
+    background: #333;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateZ(0);
+
+    a {
+      font-size: 48px;
+    }
+  }
+}
+
+.c-required {
+  &::after {
+    content: " *";
+    color: #f00;
+  }
+}
+
+.c-read-mode {
+  .c-required {
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.c-height-auto {
+  height: auto;
+}
+
+.c-display-none {
+  display: none !important;
+}
+
+.c-caveat-logo {
+  font-family: Caveat, cursive;
+}
+
+.c-open-sans-condensed-logo {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.c-responsive-image {
+  width: 100%;
+}
+
+.c-full-width {
+  width: 100%;
+}
+
+.c-theme {
+  .c-icon-android {
+    font-size: 50px;
+    color: #a4c639;
+  }
+
+  .c-icon-apple {
+    font-size: 50px;
+    color: #787878;
+  }
+
+  .c-active {
+    &.c-icon-android {
+      text-shadow: 0 0 20px #a4c639;
+    }
+
+    &.c-icon-apple {
+      text-shadow: 0 0 20px #787878;
+    }
+  }
+}
+
+.c-color-theme {
+  .c-active {
+    box-shadow: 0 0 20px #7c7e7c;
+  }
+}
+
+.c-language {
+  .c-active {
+    background-color: rgba(120, 120, 120, 30%);
+  }
+}
+
+.c-columns-align-center {
+  text-align: center;
+}
+
+.c-color-button {
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
+.c-card {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+
+  .c-card-header-pic {
+    .c-card-header {
+      height: 40vw;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 0;
+
+      &.c-draggable-card {
+        animation: jiggle 0.2s infinite;
+      }
+    }
+  }
+
+  .c-card-title {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.c-logo-image {
+  width: 50px;
+  height: 50px;
+  padding-top: 50px;
+  padding-left: 20px;
+  float: left;
+}
+
+.theme-dark {
+  .c-logo-image {
+    filter: invert(1);
+  }
+}
+
+.c-title-logo {
+  line-height: 90px;
+}
+
+.c-terms {
+  text-align: justify;
+}
+
+.c-modify {
+  text-align: center;
+}
+
+.c-delete-button {
+  margin-top: 20px;
+  color: #ee1717;
+}
+
+.c-height-100 {
+  height: 100%;
+}
+
+.c-hidden {
+  visibility: hidden;
+}
+
+.c-pulse {
+  animation: shadow-pulse 1.5s infinite;
+  border-radius: 50%;
+}
+
+.c-opacity {
+  opacity: 0.6;
+}
+
+.c-empty {
+  min-height: 67px;
+}
+
+.c-justify {
+  text-align: justify;
+}
